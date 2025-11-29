@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+  <meta name="theme-color" content="#0A011A">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Jeeni - Memory Stream</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#f48c25", 
+            "background-light": "#f8f7f5",
+            "background-dark": "#0A011A", 
+            "ethereal-cyan": "#50E3C2",
+            "soul-fire-orange": "#FF4E00",
+            "void-purple": "#2D004F",
+          },
+          fontFamily: {
+            "display": ["Space Grotesk", "sans-serif"],
+            "cinzel": ["Cinzel", "serif"],
+            "rajdhani": ["Rajdhani", "sans-serif"],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      overflow: hidden;
+      min-height: 100vh;
+      background-color: #0A011A;
+      /* Prevent pull-to-refresh on mobile */
+      overscroll-behavior-y: none;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+  </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
